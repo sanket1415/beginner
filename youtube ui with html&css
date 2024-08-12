@@ -1,0 +1,393 @@
+<html>
+    <head>
+        <title>Youtube frontpage</title>
+        <link rel="icon" href="https://w7.pngwing.com/pngs/208/269/png-transparent-youtube-play-button-computer-icons-youtube-youtube-logo-angle-rectangle-logo-thumbnail.png">
+    </head>
+<style>
+
+    body{
+        background-color: rgb(209, 207, 207) ;
+        color: rgb(14, 14, 14);
+        padding-bottom: 1000px;
+        margin-left: 30px;
+        padding-top: 100;
+        padding-left: 100px;
+    }
+    .video1{
+        width: 400;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.videoimg{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: -10;
+}
+
+.video-icon{
+    display: inline-block;
+    width: 45;
+    height:  36;
+    vertical-align: top;
+}
+.icon{
+    display: inline-block;
+    border-radius: 120px;
+    margin-top: 35;
+    width:  50
+}
+.video-title{
+    display: inline-block;
+    margin-left: 20px; 
+    margin-bottom: 20;
+    width:  300
+}
+.videotitle,.channel-name{
+    margin-bottom: -10;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+    row-gap: 40px;
+    margin-top: 20;
+}
+.head-section{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 20px;
+background-color: rgb(253, 250, 250);
+border-bottom: solid rgb(9, 9, 9) ;
+border-bottom-width: 1px;
+z-index: 100;
+}
+.left-sec{
+    display: flex;
+    align-items: center;
+}
+.hamburger{
+    width: 50;
+    height: 60;
+    cursor: pointer;
+    cursor: pointer;
+  margin-left: 15px;
+    
+}
+.ytimg{
+    width: 80;
+    display: flex;
+    height: 70;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35px;
+    
+}
+.middle-sec{
+    display: flex;
+    align-items: center;
+    padding: 10;
+   
+}
+.search{
+    display: flex;
+    width: 550;
+    height: 40;
+    border: solid rgb(5, 5, 5);
+    border-width: 1px;
+    background: #c6c6c7;
+    padding: 10;
+    font-size: 16;
+    border-radius: 150px 0 0 150px;
+    color: rgb(15, 15, 15);
+}
+.search-icon{
+    width: 40;
+    height: 40;
+    display: flex;
+    border: 1px solid rgb(7, 7, 7);
+    text-align: center;
+    justify-content: center;
+    margin-right: 20;
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px ;
+    cursor: pointer;
+    padding-inline:10px ;
+}
+.mic-icon{
+    width: 50;
+    height: 45;
+    border-radius: 50px;
+}
+.right-sec{
+    display: flex; 
+    justify-content: space-between;
+}
+.account-icon{
+    width: 40;
+    height: 40;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 20;
+
+}
+.grid-icon{
+    width: 40;
+    height: 40;
+    margin-right: 20;
+    margin-left: 20px;
+    }
+
+.bell-icon{
+    width: 40;
+    height: 40;
+    border-radius: 30px;
+    margin-right: 20;
+    
+}
+.sidebar{
+    position: fixed;
+    color: rgb(11, 11, 11);
+    top: 100px;
+    left: 0px;
+    bottom: 0px;
+    width: 100px;
+    background-color: rgb(253, 251, 251);
+    border-right: solid white ;
+border-right-width: 1px;        
+z-index: 99;
+}
+.timer{
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 2px;    
+    right: 8;
+    bottom: 0;
+    font-size: 20;
+    font-weight: 500;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.thumbnail{
+    position: relative;
+}
+.sideicons{
+background-color: rgb(252, 250, 250) ;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10;
+    height: 120px;
+    cursor: pointer;
+
+}
+.home ,.shorts ,.sub ,.you ,.downloads{
+    width: 50;
+}
+.sideicons div{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: -25px;
+}
+</style>
+<div class="head-section">
+    <div class="left-sec"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="" class="hamburger"> 
+    
+    <img src="youtubeicon.png" alt="" class="ytimg">
+    
+    </div>
+    <div class="middle-sec">
+        <input type="text" placeholder="Search" class="search">
+        <img src="https://i.pinimg.com/736x/fa/0e/7b/fa0e7b992eff03c576727e95c746005c.jpg" alt="" class="search-icon">
+
+        <img src="https://e7.pngegg.com/pngimages/333/606/png-clipart-microphone-computer-icons-dictation-machine-microphone-electronics-microphone.png" alt="" class="mic-icon">
+
+
+    </div>
+    <div class="right-sec">
+        <img src="https://cdn-icons-png.flaticon.com/512/2486/2486225.png" alt="" class="grid-icon">
+
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" alt="" class="bell-icon">
+
+
+        <img src="https://yt3.ggpht.com/ytc/AIf8zZRmEDu3KcuaYVuRaWdFMBs_4hgMYquH5lNcp-WzYI_7kMv-7DJ5Ro9J0xKQCR8J=s88-c-k-c0x00ffffff-no-rj" alt="" class="account-icon">
+
+    </div>
+</div>
+
+<div class="sidebar">
+<div class="sideicons">
+    <svg class="home" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+        <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z"></path>
+        </svg>
+        <div>HOME</div>
+</div>
+<div class="sideicons">
+   <img src="https://i.pinimg.com/originals/17/d2/18/17d21878c22fe49e7e4752eecaa36541.png" alt="" class="shorts">
+   <DIV>SHORTS</DIV>
+</div>
+<div class="sideicons">
+    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3264373/subscriptions-icon-sm.png" alt="" class="sub">
+    <DIV>SUBSCRIPSTIONS</DIV>
+</div>
+<div class="sideicons">
+<img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-file-download-icon-png-image_4647924.jpg" alt="" class="downloads">
+
+<DIV>DOWNLOADS</DIV>
+</div>
+</div>
+
+<div class="grid">
+    
+<div class="video1">
+    <div class="thumbnail">
+    <div class="video-img">
+        <img src="https://i.ytimg.com/vi/Tmwbm4eqncM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAPaYkmN3FIIhmySK7Q93L7l_hM1w" alt="" class="videoimg">
+        <div class="timer">17:24</div>
+    </div>
+    </div>
+    <div class="video-info">
+
+    <div class="video-icon">
+        <img src="https://yt3.ggpht.com/_G7vNBkpc2gfN1ZQVnLciT3cHDqa-9fqKh4gYatb9tjgWDWUez_In4WTQKUzL8HrtVI9oOSp=s68-c-k-c0x00ffffff-no-rj" alt="" class="icon">
+    </div>
+
+    <div class="video-title">
+<h2 class="videotitle">AJJU BHAI TRANSFORMATION 😂</h2>
+
+<p class="channel-name">ezReacts</p>
+<p class="views-time">2.4M views • 5 hr ago</p>
+
+    </div>
+</div>
+</div>
+
+
+<div class="video1">
+    <div class="thumbnail">
+    <div class="video-img">
+        <img src="https://i.ytimg.com/vi/8aIB6W9RGbo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADmtAyaS_YIWqGUu8fhl2HdEOdlA" alt="" class="videoimg">
+        <div class="timer">13:29</div>
+    </div>
+    </div>
+    <div class="video-info">
+
+    <div class="video-icon">
+        <img src="https://yt3.ggpht.com/z7ld-8fd6O1_TWOwzngpxqnkNfdyyQfm-Gk0PwOSzep3LFCCtzbUWKsNGPL6Spk4hWqHZUgk=s68-c-k-c0x00ffffff-no-rj" alt="" class="icon">
+    </div>
+
+    <div class="video-title">
+<h2 class="videotitle">INDIA'S BEST WEDDING</h2>
+
+<p class="channel-name">Tanmay Bhat</p>
+<p class="views-time">5.4M views • 1 year ago</p>
+
+    </div>
+</div>
+</div>
+
+<div class="video1">
+    <div class="thumbnail">
+    <div class="video-img">
+        <img src="https://i.ytimg.com/vi/G3e-cpL7ofc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeCRIPYMkDqa-58AscpsxUVLUc4w" alt="" class="videoimg">
+        <div class="timer">6:08:29</div>
+    </div>
+    </div>
+    <div class="video-info">
+
+    <div class="video-icon">
+        <img src="https://yt3.ggpht.com/ytc/AIf8zZSoN0PkqajCSfsSJT8C0zd9kgJ5zI-JR_K7BOJ3=s88-c-k-c0x00ffffff-no-rj" alt="" class="icon">
+    </div>
+
+    <div class="video-title">
+<h2 class="videotitle">HTML & CSS Full Course - Beginner to Pro</h2>
+
+<p class="channel-name">SuperSimpleDev</p>
+<p class="views-time">656k views • 5 months ago</p>
+
+    </div>
+</div>
+</div>
+
+
+<div class="video1">
+    <div class="thumbnail">
+    <div class="video-img">
+        <img src="https://i.ytimg.com/vi/StY5nHRrZa0/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDRN-J3Tw74eAYQhuSlyPv9LDkuig" alt="" class="videoimg">
+        <div class="timer">23:52</div>
+    </div>
+    </div>
+    <div class="video-info">
+
+    <div class="video-icon">
+        <img src="https://yt3.ggpht.com/ytc/AIf8zZSbti718-54Kziom_kiMDEEcRF2s2cSgwq8jl50fw=s68-c-k-c0x00ffffff-no-rj" alt="" class="icon">
+    </div>
+
+    <div class="video-title">
+<h2 class="videotitle">HE BEAT MAGNUS CARLSEN!!!!!!</h2>
+
+<p class="channel-name">GhothamChess</p>
+<p class="views-time">8.4M views • 1 week ago</p>
+
+    </div>
+</div>
+</div>
+
+<div class="video1">
+    <div class="thumbnail">
+    <div class="video-img">
+        <img src="https://i.ytimg.com/vi/oilFiLwY4Ks/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDmUQ-l933rOiqQtbOrHELQShft6w" alt="" class="videoimg">
+        <div class="timer">8:42</div>
+    </div> </div>
+    <div class="video-info">
+
+    <div class="video-icon">
+        <img src="https://yt3.ggpht.com/j01juFvKwHnKHdgcklpPKLkfNBuGbGJKLBwXVhbN_5LeCU3S9bTsHBL-MKPRQCjpZpfPJ_dJ=s68-c-k-c0x00ffffff-no-rj" alt="" class="icon">
+    </div>
+
+    <div class="video-title">
+<h2 class="videotitle">E.X.A.M.S</h2>
+
+<p class="channel-name">CarryMinati</p>
+<p class="views-time">14.4M views • 6 years ago</p>
+
+    </div>
+</div>
+</div>
+
+
+<div class="video1">
+    <div class="thumbnail">
+    <div class="video-img">
+        <img src="https://i.ytimg.com/vi/8KVYnaSKyDM/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCZIk0flxIOM2n5IEsln5z5Pq156g" alt="" class="videoimg">
+        <div class="timer">9:45</div>
+    </div>
+    </div>
+    <div class="video-info">
+
+    <div class="video-icon">
+        <img src="https://yt3.ggpht.com/_G7vNBkpc2gfN1ZQVnLciT3cHDqa-9fqKh4gYatb9tjgWDWUez_In4WTQKUzL8HrtVI9oOSp=s68-c-k-c0x00ffffff-no-rj" alt="" class="icon">
+    </div>
+
+    <div class="video-title">
+<h2 class="videotitle">INDIA'S BEST WEDDING</h2>
+
+<p class="channel-name">ezReacts</p>
+<p class="views-time">100k views • 16 hrs ago</p>
+
+    </div>
+</div>
+</div>
+</div>
+</html>
